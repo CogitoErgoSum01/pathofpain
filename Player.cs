@@ -13,7 +13,7 @@ public partial class Player : CharacterBody2D
 	public float dashTime = 0.15f;
 	public float dashTimer = 0f;
 
-	// Dash cooldown
+	
 	public float dashCooldown = 1.0f;
 	public float dashCooldownTimer = 0f;
 
@@ -104,7 +104,7 @@ public partial class Player : CharacterBody2D
 				velocity.Y = WallJumpVelocity;
 		}
 
-		// Dash with 1 second cooldown (works on ground and in air)
+		
 		if (Input.IsActionJustPressed("ui_dash") && dashCooldownTimer <= 0)
 		{
 			isdashing = true;
