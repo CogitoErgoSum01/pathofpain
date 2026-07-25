@@ -9,7 +9,7 @@ public partial class Saw : AnimatableBody2D
 	{
 		
 		killing = GetNode<Area2D >("killing") ;
-		//killing.BodyEntered += OnKillingBodyEntered; 
+		
 	}
 
 	private void OnKillingBodyEntered(Node body)
